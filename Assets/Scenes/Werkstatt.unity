@@ -1454,10 +1454,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 2147483648
   m_DistanceCalculationMode: 1
   m_SelectMode: 1
-  m_CustomReticle: {fileID: 0}
+  m_CustomReticle: {fileID: 3551676689084346404, guid: b4248ad3a09c74d4e908423db40f653c, type: 3}
   m_FirstHoverEntered:
     m_PersistentCalls:
       m_Calls: []
@@ -13126,15 +13126,15 @@ PrefabInstance:
     - target: {fileID: 4443133675443184081, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fa1b84531f017b648b4be9417bb2d875, type: 2}
+      objectReference: {fileID: 2100000, guid: 225547f2cacb8b54f8cd053f8da32e1a, type: 2}
     - target: {fileID: 4443133675443184081, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: fa1b84531f017b648b4be9417bb2d875, type: 2}
+      objectReference: {fileID: 2100000, guid: 225547f2cacb8b54f8cd053f8da32e1a, type: 2}
     - target: {fileID: 7700171754157577920, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fa1b84531f017b648b4be9417bb2d875, type: 2}
+      objectReference: {fileID: 2100000, guid: 225547f2cacb8b54f8cd053f8da32e1a, type: 2}
     - target: {fileID: 7767141613846735050, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_Name
       value: Fahrradrahmen (2)
@@ -17251,7 +17251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767141613846735051, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_InteractionLayers.m_Bits
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7767141613846735052, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_IsKinematic
@@ -18394,7 +18394,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_InteractionLayers:
-    m_Bits: 1
+    m_Bits: 5
   m_DistanceCalculationMode: 1
   m_SelectMode: 0
   m_CustomReticle: {fileID: 0}
