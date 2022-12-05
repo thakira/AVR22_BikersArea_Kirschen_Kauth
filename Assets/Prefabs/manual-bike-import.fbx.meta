@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: 1f1c17c02904ade40b099b772f4ddbea
+ModelImporter:
+  serializedVersion: 21300
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle_MAT
+    second: {fileID: 2100000, guid: 40ccb2c345c027a4ca3279d19240da6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brakes_MAT
+    second: {fileID: 2100000, guid: 370f91cb439254548b7265c1dbc9ee63, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cage_MAT
+    second: {fileID: 2100000, guid: 8b2037bb6f400cd49b4b7575a5e78816, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cassette_MAT
+    second: {fileID: 2100000, guid: 57d569262a95d804cbbec24f834cccfb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Chain_MAT
+    second: {fileID: 2100000, guid: 846585f9181cddc4797a5df173372c45, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Computer_MAT
+    second: {fileID: 2100000, guid: 2d910345db4e539489a4730c62965dc5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Crankset_MAT
+    second: {fileID: 2100000, guid: c163aea3eb622214895a0d0df52c3c40, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DerailleurFront_MAT
+    second: {fileID: 2100000, guid: f47d9aa9506b7f64a8e92bd6f93ae075, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DerailleurRear_MAT
+    second: {fileID: 2100000, guid: e47005d4dc62de14b8ca1af646b7bb1f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame_MAT
+    second: {fileID: 2100000, guid: b4118ef3fde2fb94eb91e0408c64740b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: HandlebarTape_MAT
+    second: {fileID: 2100000, guid: 2a5950609a2a52548a6c9088d0d7f6f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_MAT
+    second: {fileID: 2100000, guid: f9f75e21928506b43a09ccbc8f8ddd15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PaintBlack_MAT
+    second: {fileID: 2100000, guid: db7151f539f21c647ac8a49ae6389422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pedal_MAT
+    second: {fileID: 2100000, guid: b9f49ff568c193b439f9d807d6db2f5e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Saddle_MAT
+    second: {fileID: 2100000, guid: e31d83f156e5c144f8d2f2960aefa83d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shifters_MAT
+    second: {fileID: 2100000, guid: 3bba27bd9a5ed8d43a3de4e61f9465df, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wheels_MAT
+    second: {fileID: 2100000, guid: d0ce2cbbf44677d4ea7b742cf92895db, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: bottle_diff
+    second: {fileID: 2800000, guid: e594c9bdc69e2f1458d374d67a0d62d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: brakes_diff
+    second: {fileID: 2800000, guid: 135f0730e17ef504d898235abbfc91ef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cage_diff
+    second: {fileID: 2800000, guid: 3098ca1f6758aca44b6ea369cb5d8745, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: cassette_diff
+    second: {fileID: 2800000, guid: 94e8b959128fb5e469d4819fad47f2b8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chain_bump
+    second: {fileID: 2800000, guid: 10284cbfdbfc56242bc5263bbb3c1708, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: chain_diff
+    second: {fileID: 2800000, guid: 0b9b9b5a02dafbc4c9f2f5dd3cef2a3a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: computer_diff
+    second: {fileID: 2800000, guid: ebe2ffa2c37899a4f8bea45bca135bfc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: crankset_diff
+    second: {fileID: 2800000, guid: b23db74aa1455e647b40ad514449a356, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: frame_diff
+    second: {fileID: 2800000, guid: d4866b144da31964291e576702446d70, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: front_derailleur_diff
+    second: {fileID: 2800000, guid: c83a34d9ec55c934cb2a6822de9e561b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pedal_bump
+    second: {fileID: 2800000, guid: 057ee0dd81d89c9418f3be386395fe98, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: pedal_diff
+    second: {fileID: 2800000, guid: f3d29aa456ea0544ca1c00878d26ecdc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: rear_derailleur_diff
+    second: {fileID: 2800000, guid: 677c773942706654a8ae7e79a4a6f314, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: saddle_bump
+    second: {fileID: 2800000, guid: 392969115cb9fd641a307ef4c07f5286, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: saddle_diff
+    second: {fileID: 2800000, guid: aeae2e0acab34f5448dd7ee25c349d61, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shifters_bump
+    second: {fileID: 2800000, guid: 773dc5f9a81df7642b5dcef634f925c0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shifters_diff
+    second: {fileID: 2800000, guid: 7599e5673a24b124cb9eadd2cd5c50e2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tape_bump
+    second: {fileID: 2800000, guid: 130baf70d05b8e740962f93e27f907d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tape_diff
+    second: {fileID: 2800000, guid: 15cebd62cf4c00548bf7624269014c6c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wheel_bump
+    second: {fileID: 2800000, guid: 13f347e18582a1244a1b98421e2d4310, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: wheel_diff
+    second: {fileID: 2800000, guid: f9112c954e5ceeb41a483773a8b8aa64, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 1
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
