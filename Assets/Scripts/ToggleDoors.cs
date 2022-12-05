@@ -14,8 +14,8 @@ public class ToggleDoors : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       // Debug.LogWarning("Trigger ausgelöst durch: " + other.name);
-        if (other.CompareTag("Player"))
+        Debug.LogWarning("Trigger ausgelöst durch: " + other.name);
+        if (other.CompareTag("hand"))
         {
             StartCoroutine("openDoor");
         }
@@ -23,8 +23,8 @@ public class ToggleDoors : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        // Debug.LogWarning("Trigger verlassen durch: " + other.name);
-        if (other.CompareTag("Player"))
+        Debug.LogWarning("Trigger verlassen durch: " + other.name);
+        if (other.CompareTag("hand"))
         {
             StartCoroutine("closeDoor");
         }
@@ -32,7 +32,7 @@ public class ToggleDoors : MonoBehaviour
 
     IEnumerator openDoor()
     {
-        // Debug.LogWarning("Tür öffnen");
+        Debug.LogWarning("Tür öffnen");
         DoorA.Play("openDoorA", 0, 0.0f);
         DoorB.Play("openDoorB", 0, 0.0f);
         yield return null;
@@ -40,7 +40,7 @@ public class ToggleDoors : MonoBehaviour
     
     IEnumerator closeDoor()
     {
-       //  Debug.LogWarning("Tür schliessen");
+        Debug.LogWarning("Tür schliessen");
         DoorA.Play("closeDoorA", 0, 0.0f);
         DoorB.Play("closeDoorB", 0, 0.0f);
         yield return null;
