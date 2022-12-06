@@ -982,7 +982,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 706272882454899289, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
   m_PrefabInstance: {fileID: 487141188}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &88929577
+--- !u!114 &88929576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1134,7 +1134,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
+  m_StaticShadowCaster: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1181,7 +1181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 133386226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10, y: 0, z: -5.742}
+  m_LocalPosition: {x: 10, y: 0, z: -5.626}
   m_LocalScale: {x: 1, y: 1, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4105,6 +4105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 706272882454899289, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
 --- !u!4 &431786364 stripped
@@ -4673,6 +4677,14 @@ PrefabInstance:
     - target: {fileID: 706272881822761943, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 706272882454899291, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
+      propertyPath: m_SpotAngle
+      value: 46.718246
+      objectReference: {fileID: 0}
+    - target: {fileID: 706272882454899291, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 19.029968
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
