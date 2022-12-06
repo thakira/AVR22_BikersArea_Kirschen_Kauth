@@ -12,18 +12,6 @@ TagManager:
   - 
   - Water
   - UI
-  - frame
-  - wheel
-  - zahnrad
-  - pedale
-  - lenkstange
-  - werkzeug
-  - schraubendreher
-  - maulschluessel
-  - hammer
-  - akkuschrauber
-  - ratsche
-  - imbus
   - 
   - 
   - 
@@ -36,8 +24,20 @@ TagManager:
   - 
   - 
   - 
+  - Grabbable
   - 
   - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Socket
+  - Post Processing
   m_SortingLayers:
   - name: Default
     uniqueID: 0

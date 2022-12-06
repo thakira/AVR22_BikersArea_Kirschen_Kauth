@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1350288614329135368}
   - component: {fileID: 1350288614329135370}
   - component: {fileID: 1350288614329135369}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Socket Lenkstange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 1350288614497680407}
   - component: {fileID: 1350288614497680393}
   - component: {fileID: 1350288614497680392}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Socket Rad hinten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1350288614621223290}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1350288615530576251}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 5550039503674038634}
   - component: {fileID: 8212938573618107399}
   - component: {fileID: 172643438653438053}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Socket Zahnrad links
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 3246270476343436185}
   - component: {fileID: 7944519712906607736}
   - component: {fileID: 7700171754157577920}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Rahmenhalter Lenker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 144278924642708966}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 8756239816185628861}
   - component: {fileID: 1013015182641465837}
   - component: {fileID: 6629133523858712499}
-  m_Layer: 0
+  m_Layer: 30
   m_Name: Socket Zahnrad rechts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -685,7 +685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3883941373727168961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Attach
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -718,10 +718,10 @@ GameObject:
   - component: {fileID: 3043954819548529438}
   - component: {fileID: 3637823818016326848}
   - component: {fileID: 4443133675443184081}
-  - component: {fileID: 8919247627823180755}
   - component: {fileID: 7767141613846735052}
   - component: {fileID: 7767141613846735051}
-  m_Layer: 0
+  - component: {fileID: 1612941571776453100}
+  m_Layer: 18
   m_Name: Fahrradrahmen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,19 +800,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8919247627823180755
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7767141613846735050}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.4996796, y: 2.974379, z: 0.73348033}
-  m_Center: {x: -1.9776119, y: -0.08874894, z: 0.000006452205}
 --- !u!54 &7767141613846735052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -954,3 +941,17 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!64 &1612941571776453100
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7767141613846735050}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 767ba1d9ec0c49543818dd53c9457228, type: 3}
