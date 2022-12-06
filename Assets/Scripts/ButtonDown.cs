@@ -20,7 +20,7 @@ public class ButtonDown : MonoBehaviour
         if (moveGrappler)
             
         {
-            Debug.LogWarning("Down Grappler starts moving");
+            // Debug.LogWarning("Down Grappler starts moving");
             // Debug.LogWarning("localpos.z: " + grappler.transform.localPosition.z + (grappler.transform.localPosition.z < endPosition).ToString());
             //  Debug.LogWarning("Down localpos.z: " + grappler.transform.localPosition.z);
             // Debug.LogWarning("Down Grappler is moving");
@@ -35,7 +35,7 @@ public class ButtonDown : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogWarning(other.name + " berührt Knopf Down ");
+        // Debug.LogWarning(other.name + " berührt Knopf Down ");
         if(other.CompareTag("hand")) {
             // Debug.LogWarning("Hand berührt Knopf Down ");
             // UpButton.Play("UpButtonPressed");
@@ -49,7 +49,7 @@ public class ButtonDown : MonoBehaviour
     {
         if (other.CompareTag("hand"))
         {
-            Debug.LogWarning("Hand ist raus Down ");
+            // Debug.LogWarning("Hand ist raus Down ");
             moveGrappler = false;
             StartCoroutine("StopButton");
             // UpButton.Play("UpButtonReleased");
@@ -59,15 +59,15 @@ public class ButtonDown : MonoBehaviour
 
     IEnumerator MoveButton()
     {
-        Debug.LogWarning("Knopf rein Down ");
-        DownButton.Play("UpButtonPressed");
+        // Debug.LogWarning("Knopf rein Down ");
+        DownButton.Play("DownButtonPressed");
         yield return null;
     }
     
     IEnumerator StopButton()
     {
-        Debug.LogWarning("Knopf raus Down");
-        DownButton.Play("UpButtonReleased");
+        // Debug.LogWarning("Knopf raus Down");
+        DownButton.Play("DownButtonReleased");
         yield return null;
     }
 }
