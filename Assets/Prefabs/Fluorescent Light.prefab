@@ -96,13 +96,14 @@ GameObject:
   m_Component:
   - component: {fileID: 706272882454899290}
   - component: {fileID: 706272882454899291}
+  - component: {fileID: 2893581397665750082}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &706272882454899290
 Transform:
   m_ObjectHideFlags: 0
@@ -131,9 +132,9 @@ Light:
   m_Shape: 0
   m_Color: {r: 0.94509804, g: 0.8965165, b: 0.6901961, a: 1}
   m_Intensity: 1
-  m_Range: 2.563364
-  m_SpotAngle: 55.039
-  m_InnerSpotAngle: 27.350712
+  m_Range: 3.7012877
+  m_SpotAngle: 50.321754
+  m_InnerSpotAngle: 44.32651
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -180,3 +181,23 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &2893581397665750082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706272882454899289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
