@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: DefaultMaterial
     second: {fileID: 2100000, guid: 321b85621027ec0499d61022d2c49868, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: iron_shelf_material
+    second: {fileID: 2100000, guid: f0eb51148dabbdc469f1e826b538c6d4, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

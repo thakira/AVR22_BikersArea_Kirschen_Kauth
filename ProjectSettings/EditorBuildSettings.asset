@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Werkstatt.unity
     guid: 81e66aa748b285640af78f9ea54a192c
+  - enabled: 1
+    path: Assets/Scenes/City.unity
+    guid: 33cb3d59592425342a5aa692e0e162f2
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 29f457237b8394747a687a1da82a852a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c3bd2a49fba13e942918c1c4047f9e81, type: 2}
