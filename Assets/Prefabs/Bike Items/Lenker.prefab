@@ -121,6 +121,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: WerkstattSceneManager, Assembly-CSharp
+        m_MethodName: SetMountedIcon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls:
@@ -132,6 +144,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: WerkstattSceneManager, Assembly-CSharp
+        m_MethodName: SetUnmountedIcon
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
@@ -224,7 +248,7 @@ MeshRenderer:
   - {fileID: -4373742238433787860, guid: 575e96d585aecb94cb0f496d1c590bfe, type: 3}
   - {fileID: 2100000, guid: f71bc46511f700d44886dfc6ba7aead0, type: 2}
   - {fileID: -4373742238433787860, guid: 575e96d585aecb94cb0f496d1c590bfe, type: 3}
-  - {fileID: 6773890811388857144, guid: 6740ac64e8805ed4991de696e52555ed, type: 3}
+  - {fileID: 2717629391965333470, guid: 346ac48c7c7f04b429a219ae66040426, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -363,7 +387,7 @@ MonoBehaviour:
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
   m_AttachEaseInTime: 0.15
-  m_MovementType: 0
+  m_MovementType: 1
   m_VelocityDamping: 1
   m_VelocityScale: 1
   m_AngularVelocityDamping: 1
