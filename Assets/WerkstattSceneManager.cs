@@ -8,6 +8,8 @@ public class WerkstattSceneManager : MonoBehaviour
 {
     public static WerkstattSceneManager instance;
 
+    // WerstattSceneManager.instance.IsTightened(1);
+
     [SerializeField, Tooltip("Greifarm Socket, der überprüft werden soll.")]
     private XRSocketInteractor grabSocketInteractor;
 
@@ -94,6 +96,11 @@ public class WerkstattSceneManager : MonoBehaviour
             taskIcons[i].transform.parent.Find("IconMounted").gameObject.SetActive(true);
             tightenedItems[i] = true;
         }
+
+        if (i == 4)
+        {
+
+        }
     }
 
     public void SetUnmountedIcon(int i)
@@ -108,6 +115,12 @@ public class WerkstattSceneManager : MonoBehaviour
             taskIcons[i].transform.parent.Find("IconMounted").gameObject.SetActive(false);
             tightenedItems[i] = false;
         }
+    }
+
+
+    public void IsTightened(int i)
+    {
+        tightenedItems[i] = true;
     }
 
 
