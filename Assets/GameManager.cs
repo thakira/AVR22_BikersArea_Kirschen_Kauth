@@ -6,21 +6,23 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
 
-    private Scene scene;
+    public static GameManager instance;
+
+    private bool frameInGrab = false;
+
+    public GameObject test;
 
     // Start is called before the first frame update
     void Start()
     {
-        var parameters = new LoadSceneParameters(LoadSceneMode.Additive);
-
-        scene = SceneManager.LoadScene(1, parameters);
-        Debug.Log("Load 1 of scene2: " + scene.name);
-        scene = SceneManager.LoadScene(2, parameters);
-        Debug.Log("Load 2 of scene3: " + scene.name);
-        scene = SceneManager.LoadScene(3, parameters);
-        Debug.Log("Load 3 of scene4: " + scene.name);
-        scene = SceneManager.LoadScene(4, parameters);
-        Debug.Log("Load 4 of scene5: " + scene.name);
+        if (instance != null && instance != this)
+        {
+            Destroy(this);
+        } 
+        else
+        {
+            instance = this;
+        }
     }
 
     // Update is called once per frame
@@ -28,4 +30,5 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
 }
