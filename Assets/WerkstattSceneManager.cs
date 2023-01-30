@@ -8,9 +8,9 @@ public class WerkstattSceneManager : MonoBehaviour
 {
     public static WerkstattSceneManager instance;
 
-    // WerstattSceneManager.instance.IsTightened(1);
+    // WerkstattSceneManager.instance.IsTightened(1);
 
-    [SerializeField, Tooltip("Greifarm Socket, der überprüft werden soll.")]
+    [SerializeField, Tooltip("Greifarm Socket, der ï¿½berprï¿½ft werden soll.")]
     private XRSocketInteractor grabSocketInteractor;
 
     [SerializeField, Tooltip("Reihenfolge beachten! -yellow-blue-red-pink-black-grey-green-")] 
@@ -122,6 +122,8 @@ public class WerkstattSceneManager : MonoBehaviour
     {
         tightenedItems[i] = true;
     }
+
+
 
 
     private void Reset()
