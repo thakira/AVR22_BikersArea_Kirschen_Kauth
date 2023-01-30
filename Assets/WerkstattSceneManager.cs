@@ -12,7 +12,7 @@ public class WerkstattSceneManager : MonoBehaviour
 
     // WerkstattSceneManager.instance.IsTightened(1);
 
-    [SerializeField, Tooltip("Greifarm Socket, der �berpr�ft werden soll.")]
+    [SerializeField, Tooltip("Greifarm Socket, der ueberprueft werden soll.")]
     private XRSocketInteractor grabSocketInteractor;
 
     [SerializeField, Tooltip("Reihenfolge beachten! -yellow-blue-red-pink-black-grey-green-")] 
@@ -88,6 +88,20 @@ public class WerkstattSceneManager : MonoBehaviour
 
         Debug.Log(objName.transform.name + " in socket of " + transform.name);
         Debug.Log(currentObject.transform.name + " hat die Farbe " + myRend.materials[0].name);
+    }
+
+    public void SetTeilenummer(XRSocketInteractor mySocket)
+    {
+        String actualSocket = mySocket.transform.gameObject.name;
+        Debug.Log("Socket: " + mySocket.transform.gameObject.name);
+        IXRSelectInteractable objName = mySocket.GetOldestInteractableSelected();
+        GameObject currentObject = objName.transform.gameObject;
+        if (actualSocket == "SocketRadHinten")
+        {
+            currentObject.GetComponentInChildren<Drilling>().setTeilenummer(3);
+        }
+        //Debug.Log("CurrentObject: " + currentObject.name);
+        
     }
 
     private void GetRandomTasks(int i)

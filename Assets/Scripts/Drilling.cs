@@ -68,4 +68,9 @@ public class Drilling : MonoBehaviour
         screwedIn = true;
 
     }
+
+    public void setTeilenummer(int no)
+    {
+        this.teilenummer = no;
+    }
 }

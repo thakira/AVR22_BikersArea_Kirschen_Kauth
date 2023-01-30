@@ -33,7 +33,7 @@ public class ScrAkkuschrauber : MonoBehaviour
         d.TryGetFeatureValue(CommonUsages.primaryButton, out primaryButtonDown);
         if (primaryButtonDown)
         {
-            Debug.LogWarning("A gedrückt!");
+           //Debug.LogWarning("A gedrückt!");
             StartCoroutine("StartDrill");
         }
         else
@@ -53,7 +53,7 @@ public class ScrAkkuschrauber : MonoBehaviour
 
     IEnumerator StartDrill()
     {
-        Debug.LogWarning("Knopf rein");
+        //Debug.LogWarning("Knopf rein");
         //WerkstattSceneManager.instance.DrillActive(true);
         isActive = true;
         gameObject.GetComponent<AudioSource>().Play();
@@ -67,7 +67,7 @@ public class ScrAkkuschrauber : MonoBehaviour
     {
         isActive = false;
         //WerkstattSceneManager.instance.DrillActive(false);
-        Debug.LogWarning("Knopf raus");
+        //Debug.LogWarning("Knopf raus");
         gameObject.GetComponent<AudioSource>().Stop();
        //drilling.Stop();
         activateDrill.Play("AkkuschrauberAus");
