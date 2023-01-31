@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
@@ -23,9 +25,10 @@ public class WerkstattSceneManager : MonoBehaviour
     [SerializeField] private GameObject[] taskIcons;
     [SerializeField] private GameObject[] bikeItems;
     [SerializeField] private GameObject[] bikeFrames;
+    [SerializeField] private GameObject newTaskButton;
 
     private bool[] mountedItems = { false, false, false, false, false, false, false, false };
-    private bool[] tightenedItems = { true, false, false, false, true, true, false, false };
+    private bool[] isTightened = { true, true, false, false, true, true, false, false };
 
     private int[] tasks;
 
@@ -66,7 +69,6 @@ public class WerkstattSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void ToggleFrameInGrab(bool isInGrab)
@@ -98,26 +100,43 @@ public class WerkstattSceneManager : MonoBehaviour
         GameObject currentObject = objName.transform.gameObject;
         if (actualSocket == "SocketRadHinten")
         {
+            Debug.Log("CurrentObject: " + currentObject.name);
             currentObject.GetComponentInChildren<Drilling>().setTeilenummer(3);
+            Debug.Log("Teilenummer in Drilling: " + currentObject.GetComponentInChildren<Drilling>().getTeileNummer());
         }
-        //Debug.Log("CurrentObject: " + currentObject.name);
+        if(actualSocket == "SocketLenker")
+        {
+            currentObject.GetComponentInChildren<Drilling>().setTeilenummer(2);
+        }
+        if(actualSocket == "SocketPedale")
+        {
+            currentObject.GetComponentInChildren<Drilling>().setTeilenummer(6);
+        }
+        
+        
         
     }
 
     private void GetRandomTasks(int i)
     {
-        tasks = new int[] { 2, 4, 3, 6 };
+        tasks = new int[] { 2, 4, 3, 0 };
     }
 
     private void SetTaskThumbnails()
     {
+        foreach (Image task in taskThumbnails)
+        {
+            task.sprite = null;
+        }
         currentTaskImage.sprite = bikeFrameImages[tasks[0]];
         Debug.Log("CurrentColor: " + currentTaskImage.sprite.name);
-
+        
         for (int i = 0; i<taskThumbnails.Length; i++)
         {
-            taskThumbnails[i].sprite = bikeFrameImages[tasks[i]+1];
+            
+            taskThumbnails[i].sprite = bikeFrameImages[tasks[i+1]];
         }
+
     }
 
     public void SetMountedIcon(int i)
@@ -127,10 +146,10 @@ public class WerkstattSceneManager : MonoBehaviour
         taskIcons[i].transform.Find("IconToDo").gameObject.SetActive(false);
         taskIcons[i].transform.Find("IconDone").gameObject.SetActive(true);
 
-        if (i != 0)
+        if (i != 0 && i != 1)
         {
             taskIcons[i].transform.parent.Find("IconMounted").gameObject.SetActive(true);
-            tightenedItems[i] = true;
+            //isTightened[i] = true;
         }
 
     }
@@ -145,13 +164,66 @@ public class WerkstattSceneManager : MonoBehaviour
         if (i != 0)
         {
             taskIcons[i].transform.parent.Find("IconMounted").gameObject.SetActive(false);
-            tightenedItems[i] = false;
+            isTightened[i] = false;
         }
     }
 
     public void IsTightened(int i)
     {
-        tightenedItems[i] = true;
+       // 0 = Rahmen, 1 = Lenker, 2 = Vorderrad, 3 = Hinterrad, 4 = Zahnrad links, 5 = Zahnrad rechts, 6 = Pedale links, 7 = Pedale rechts
+        if (i == 4 || i == 5 || i == 6 || i == 7)
+        {
+            taskIcons[4].transform.parent.Find("IconMounted").gameObject.SetActive(false);
+            taskIcons[5].transform.parent.Find("IconMounted").gameObject.SetActive(false);
+            taskIcons[6].transform.parent.Find("IconMounted").gameObject.SetActive(false);
+            taskIcons[7].transform.parent.Find("IconMounted").gameObject.SetActive(false);
+            isTightened[4] = true;
+            isTightened[5] = true;
+            isTightened[6] = true;
+            isTightened[7] = true;
+        } 
+        else 
+        { 
+            isTightened[i] = true;
+            taskIcons[i].transform.parent.Find("IconMounted").gameObject.SetActive(false);
+        }
+
+        bool allTightened = true;
+        int test = 0;
+        
+        foreach (bool screw in isTightened)
+        {
+            if (!screw)
+            {
+                Debug.Log(test + ": " + screw);
+                allTightened = false;
+                test++;
+                break;
+            }
+        }
+
+        if (allTightened)
+        {
+            gameObject.transform.GetComponent<AudioSource>().Play();
+            newTaskButton.SetActive(true);
+        }
+
+    }
+
+    public void GetNewTask()
+    {
+        Reset();
+        List<int> tempList = tasks.ToList();
+        tempList.RemoveAt(0);
+        tasks = tempList.ToArray();
+        Debug.Log(String.Join(",", tasks));
+        newTaskButton.SetActive(false);
+        SetTaskThumbnails();
+    }
+    
+    public bool getTightened(int i)
+    {
+        return isTightened[i];
     }
 
     public void OrderRad()
@@ -309,7 +381,12 @@ public class WerkstattSceneManager : MonoBehaviour
     private void Reset()
     {
         mountedItems = new bool[] {false, false, false, false, false, false, false, false};
-        tightenedItems = new bool[] { true, false, false, false, true, true, false, false };
+        isTightened = new bool[] { true, true, false, false, true, true, false, false };
+        foreach (GameObject icon in taskIcons)
+        {
+            icon.transform.Find("IconToDo").gameObject.SetActive(true);
+            icon.transform.Find("IconDone").gameObject.SetActive(false);
+        }
     }
 
 }

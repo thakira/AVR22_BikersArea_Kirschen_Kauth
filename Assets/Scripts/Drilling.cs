@@ -13,12 +13,16 @@ public class Drilling : MonoBehaviour
     
      // 0 = Rahmen, 1 = Lenker, 2 = Vorderrad, 3 = Hinterrad, 4 = Zahnrad links, 5 = Zahnrad rechts, 6 = Pedale links, 7 = Pedale rechts
      [SerializeField, Tooltip("Rahmen:0, Lenker:1, Vorderrad:2, Hinterrad:3, Zahnrad links:4, Zahnrad rechts:5, Pedale links:6, Pedale rechts:7")]
-     private int teilenummer; 
-    
+     public int teilenummer;
+
+     private void Awake()
+     {
+         GameObject akkuSchrauber = GameObject.FindWithTag("Akkuschrauber");
+         schrauberScript = akkuSchrauber.GetComponent<ScrAkkuschrauber>();
+     }
 
 
-
-    // Update is called once per frame
+     // Update is called once per frame
     void Update()
     {
         if (schrauberScript.isActive && inTrigger)
@@ -26,12 +30,13 @@ public class Drilling : MonoBehaviour
             StartCoroutine("DrillTimer");
             if(!screwedIn) { 
             AnimatorSchrauben.Play("Schraube");
-            Debug.Log("Schraube jetzt drehen");
+            // Debug.Log("Schraube jetzt drehen");
             }
             else
             {
                 WerkstattSceneManager.instance.IsTightened(teilenummer);
-                Debug.Log(teilenummer + " angeschraubt!");
+                Debug.Log(this.teilenummer + " angeschraubt: " + WerkstattSceneManager.instance.getTightened(this.teilenummer));
+
                 StopDrilling();
             }
         }
@@ -60,7 +65,7 @@ public class Drilling : MonoBehaviour
         inTrigger = false;
         screwedIn = false;
         AnimatorSchrauben.Play("Idle");
-        Debug.Log("Schrauben aufhören!");
+        // Debug.Log("Schrauben aufhören!");
     }
     IEnumerator DrillTimer()
     {
@@ -72,5 +77,10 @@ public class Drilling : MonoBehaviour
     public void setTeilenummer(int no)
     {
         this.teilenummer = no;
+    }
+
+    public int getTeileNummer()
+    {
+        return this.teilenummer;
     }
 }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1350288614329135370}
   - component: {fileID: 1350288614329135369}
   m_Layer: 30
-  m_Name: Socket Lenkstange
+  m_Name: SocketLenkstange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 1350288614497680393}
   - component: {fileID: 1350288614497680392}
   m_Layer: 30
-  m_Name: Socket Rad hinten
+  m_Name: SocketRadHinten
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -372,7 +372,7 @@ GameObject:
   - component: {fileID: 8212938573618107399}
   - component: {fileID: 172643438653438053}
   m_Layer: 30
-  m_Name: Socket Zahnrad links
+  m_Name: SocketZahnradLinks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -635,7 +635,7 @@ GameObject:
   - component: {fileID: 1013015182641465837}
   - component: {fileID: 6629133523858712499}
   m_Layer: 30
-  m_Name: Socket Zahnrad rechts
+  m_Name: SocketZahnradRechts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,8 +795,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7750051066174935588}
-  m_LocalRotation: {x: -0, y: -0, z: -0.24435338, w: 0.9696863}
-  m_LocalPosition: {x: -1.533, y: -0.015, z: 0}
+  m_LocalRotation: {x: 0.9696863, y: 0.24435325, z: 0.00000009115688, w: 0.0000000061451755}
+  m_LocalPosition: {x: 0.637424, y: -1.1126713, z: -0.26580387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
