@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Animator))]
-public class HandAnimation : MonoBehaviour
+public class HandAnimationold : MonoBehaviour
 {
     [SerializeField] private InputActionReference gripAction;
     [SerializeField] private InputActionReference pinchAction;

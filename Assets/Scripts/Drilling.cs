@@ -74,13 +74,14 @@ public class Drilling : MonoBehaviour
 
     }
 
-    public void setTeilenummer(int no)
+    public void SetTeilenummer(int no)
     {
         this.teilenummer = no;
     }
 
-    public int getTeileNummer()
+    public int GetTeileNummer()
     {
         return this.teilenummer;
     }
+
 }

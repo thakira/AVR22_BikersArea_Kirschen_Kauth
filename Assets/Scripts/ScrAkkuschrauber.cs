@@ -9,7 +9,7 @@ public class ScrAkkuschrauber : MonoBehaviour
     // [SerializeField] private GameObject nuss;
     [SerializeField] private Animator activateDrill;
     [SerializeField] private Animator rotateNut;
-    // [SerializeField] private AudioSource drilling;
+    [SerializeField] private AudioSource drilling;
     [SerializeField] private bool grabbed;
     public bool isActive;
     //[SerializeField] private Schrauben schrauben;
@@ -35,11 +35,16 @@ public class ScrAkkuschrauber : MonoBehaviour
         {
            //Debug.LogWarning("A gedrückt!");
             StartCoroutine("StartDrill");
+            if(!drilling.isPlaying) 
+            {
+            drilling.Play();
+            }
         }
         else
         {
             //Debug.LogWarning("A nicht gedrückt!");
             StartCoroutine("StopDrill");
+            drilling.Stop();
         }
     }
 
@@ -54,10 +59,7 @@ public class ScrAkkuschrauber : MonoBehaviour
     IEnumerator StartDrill()
     {
         //Debug.LogWarning("Knopf rein");
-        //WerkstattSceneManager.instance.DrillActive(true);
         isActive = true;
-        gameObject.GetComponent<AudioSource>().Play();
-        //drilling.Play();
         activateDrill.Play("AkkuschrauberAn");
         rotateNut.Play("AnimBit");
         yield return null;
@@ -68,8 +70,6 @@ public class ScrAkkuschrauber : MonoBehaviour
         isActive = false;
         //WerkstattSceneManager.instance.DrillActive(false);
         //Debug.LogWarning("Knopf raus");
-        gameObject.GetComponent<AudioSource>().Stop();
-       //drilling.Stop();
         activateDrill.Play("AkkuschrauberAus");
         rotateNut.Play("Idle");
 

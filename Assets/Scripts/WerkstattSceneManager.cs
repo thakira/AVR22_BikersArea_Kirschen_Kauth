@@ -13,6 +13,7 @@ public class WerkstattSceneManager : MonoBehaviour
     public static WerkstattSceneManager instance;
 
     // WerkstattSceneManager.instance.IsTightened(1);
+    [SerializeField] private AudioSource audioSource;
 
     [SerializeField, Tooltip("Greifarm Socket, der ueberprueft werden soll.")]
     private XRSocketInteractor grabSocketInteractor;
@@ -64,6 +65,7 @@ public class WerkstattSceneManager : MonoBehaviour
 
         GetRandomTasks(4);
         SetTaskThumbnails();
+        
     }
 
     // Update is called once per frame
@@ -101,16 +103,16 @@ public class WerkstattSceneManager : MonoBehaviour
         if (actualSocket == "SocketRadHinten")
         {
             Debug.Log("CurrentObject: " + currentObject.name);
-            currentObject.GetComponentInChildren<Drilling>().setTeilenummer(3);
-            Debug.Log("Teilenummer in Drilling: " + currentObject.GetComponentInChildren<Drilling>().getTeileNummer());
+            currentObject.GetComponentInChildren<Drilling>().SetTeilenummer(3);
+            Debug.Log("Teilenummer in Drilling: " + currentObject.GetComponentInChildren<Drilling>().GetTeileNummer());
         }
         if(actualSocket == "SocketLenker")
         {
-            currentObject.GetComponentInChildren<Drilling>().setTeilenummer(2);
+            currentObject.GetComponentInChildren<Drilling>().SetTeilenummer(2);
         }
         if(actualSocket == "SocketPedale")
         {
-            currentObject.GetComponentInChildren<Drilling>().setTeilenummer(6);
+            currentObject.GetComponentInChildren<Drilling>().SetTeilenummer(6);
         }
         
         
@@ -204,7 +206,10 @@ public class WerkstattSceneManager : MonoBehaviour
 
         if (allTightened)
         {
-            gameObject.transform.GetComponent<AudioSource>().Play();
+            if(!audioSource.isPlaying) 
+            {
+                audioSource.Play();
+            }
             newTaskButton.SetActive(true);
         }
 
@@ -361,7 +366,7 @@ public class WerkstattSceneManager : MonoBehaviour
         }
     }
 
-    public void orderFrame()
+    public void OrderFrame()
     {
 
         for(int i=0; i<frameOrderAdded.Length; i++)
