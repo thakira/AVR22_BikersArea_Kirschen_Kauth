@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,8 +16,16 @@ public class GrabHandPose : MonoBehaviour
     private Quaternion[] startingFingerRotations;
     private Quaternion[] finalFingerRotations;
 
+    [SerializeField] private Animator handAnimator;
+    [SerializeField] private GameObject rightHand;
 
-    
+
+    private void Awake()
+    {
+        rightHand = GameObject.FindGameObjectWithTag("HandAnimator");
+        handAnimator = rightHand.GetComponent<Animator>();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,13 +36,14 @@ public class GrabHandPose : MonoBehaviour
 
     public void SetupPose(BaseInteractionEventArgs arg)
     {
-        if (arg.interactorObject is XRDirectInteractor)
-        {
-            HandData handData = arg.interactorObject.transform.GetComponentInChildren<HandData>();
-            handData.animator.enabled = false;
+        //if (arg.interactorObject is XRDirectInteractor)
+        //{
+            //HandData handData = arg.interactorObject.transform.GetComponentInChildren<HandData>();
+            //handData.animator.enabled = false;
+            handAnimator.enabled = false;
             /*SetHandDataValues(handData, rightHandPose);
             SetHandData(handData, finalHandPosition, finalHandRotation, finalFingerRotations);*/
-        }
+        //}
 
     }
 

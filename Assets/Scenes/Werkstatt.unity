@@ -20050,14 +20050,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 839451862}
-  m_LocalRotation: {x: -0.23657456, y: 0.07573607, z: -0.01193299, w: 0.9685836}
-  m_LocalPosition: {x: -0.25, y: -0.47, z: -1.3}
+  m_LocalRotation: {x: -0.42100006, y: -0.12615782, z: 0.10187088, w: -0.8924492}
+  m_LocalPosition: {x: 0.052, y: -1.124, z: -0.207}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1802004589056788498}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: -27.16, y: 9.86, z: -3.799}
+  m_LocalEulerAnglesHint: {x: 411, y: 372.798, z: -366.9}
 --- !u!1 &852201981
 GameObject:
   m_ObjectHideFlags: 0
@@ -57480,6 +57480,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rightHandPose: {fileID: 288106617}
+  handAnimator: {fileID: 0}
+  rightHand: {fileID: 0}
 --- !u!33 &5418690491056430765
 MeshFilter:
   m_ObjectHideFlags: 0

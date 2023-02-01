@@ -206,8 +206,10 @@ public class WerkstattSceneManager : MonoBehaviour
 
         if (allTightened)
         {
+            Debug.Log("Fertig!");
             if(!audioSource.isPlaying) 
             {
+                Debug.Log("Endfanfare!");
                 audioSource.Play();
             }
             newTaskButton.SetActive(true);

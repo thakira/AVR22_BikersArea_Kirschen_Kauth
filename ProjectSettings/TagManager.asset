@@ -7,6 +7,7 @@ TagManager:
   - hand
   - Schrauber
   - Akkuschrauber
+  - HandAnimator
   layers:
   - Default
   - TransparentFX
