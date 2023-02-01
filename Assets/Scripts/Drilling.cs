@@ -69,7 +69,7 @@ public class Drilling : MonoBehaviour
     }
     IEnumerator DrillTimer()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         screwedIn = true;
 
     }

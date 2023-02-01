@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class HandData : MonoBehaviour
 {
     public enum HandModelType
@@ -10,9 +11,9 @@ public class HandData : MonoBehaviour
         Right
     }
 
-    [SerializeField] private HandModelType handType;
-    [SerializeField] private Transform root;
-    [SerializeField] private Animator animator;
-    [SerializeField] private Transform[] fingerBones;
+    public  HandModelType handType;
+    public Transform root;
+    public Animator animator;
+    public  Transform[] fingerBones;
 
 }

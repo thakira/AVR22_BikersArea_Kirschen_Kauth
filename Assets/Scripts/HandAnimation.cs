@@ -7,7 +7,7 @@ public class HandAnimation : MonoBehaviour
 {
     [SerializeField] private InputActionProperty pinchAnimation;
     [SerializeField] private InputActionProperty gripAnimation;
-    [SerializeField] private InputActionProperty pointAnimation;
+    
 
     [SerializeField] private Animator handAnimator; 
     // Start is called before the first frame update
@@ -23,8 +23,6 @@ public class HandAnimation : MonoBehaviour
         handAnimator.SetFloat("Trigger", triggerValue);
         float gripValue = gripAnimation.action.ReadValue<float>();
         handAnimator.SetFloat("Grip", gripValue);
-        float pointValue = pointAnimation.action.ReadValue<float>();
-        handAnimator.SetFloat("Point", pointValue);
-
+    
     }
 }
