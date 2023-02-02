@@ -1736,7 +1736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3973389325226457142, guid: d02b6873ae48fd94ebdb21a07e5c49ee, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5044477570949127781, guid: d02b6873ae48fd94ebdb21a07e5c49ee, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
@@ -4010,7 +4010,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7767141613846735050, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
@@ -6288,7 +6288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4252645945920410558, guid: 8c54c5d7f5d14e5489f6f5753ecfbfac, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7093434118358068208, guid: 8c54c5d7f5d14e5489f6f5753ecfbfac, type: 3}
       propertyPath: m_RootOrder
@@ -16374,7 +16374,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1035375873222577277, guid: 87ac52d6b00cf0c4c9d6c62340158449, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1237640188384270541, guid: 87ac52d6b00cf0c4c9d6c62340158449, type: 3}
       propertyPath: teilenummer
@@ -25298,7 +25298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3973389325226457142, guid: d02b6873ae48fd94ebdb21a07e5c49ee, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5044477570949127781, guid: d02b6873ae48fd94ebdb21a07e5c49ee, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -33347,7 +33347,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1035375873222577277, guid: 87ac52d6b00cf0c4c9d6c62340158449, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2819852333162192131, guid: 87ac52d6b00cf0c4c9d6c62340158449, type: 3}
       propertyPath: m_RootOrder
@@ -45830,7 +45830,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8222289788268560490, guid: 565d09e217cffce46ba9580a25496e48, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 565d09e217cffce46ba9580a25496e48, type: 3}
@@ -47752,7 +47752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4252645945920410558, guid: 8c54c5d7f5d14e5489f6f5753ecfbfac, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5464382263438337791, guid: 8c54c5d7f5d14e5489f6f5753ecfbfac, type: 3}
       propertyPath: m_RootOrder
@@ -55278,7 +55278,6 @@ GameObject:
   - component: {fileID: 5381303069824070136}
   - component: {fileID: 5381303069824070139}
   - component: {fileID: 5381303069824070140}
-  - component: {fileID: 5381303069824070141}
   m_Layer: 18
   m_Name: Akkuschrauber
   m_TagString: Akkuschrauber
@@ -57181,21 +57180,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5381303069824070141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4524471320337866604}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c153c173edc06054d8f775c7035a5e93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightHandPose: {fileID: 288106617}
-  handAnimator: {fileID: 0}
-  rightHand: {fileID: 0}
 --- !u!33 &5418690491056430765
 MeshFilter:
   m_ObjectHideFlags: 0
