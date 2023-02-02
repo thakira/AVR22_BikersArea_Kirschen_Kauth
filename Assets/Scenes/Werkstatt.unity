@@ -3944,6 +3944,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 680029548}
     m_Modifications:
+    - target: {fileID: 2056411546, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_AttachTransform
+      value: 
+      objectReference: {fileID: 999635282}
     - target: {fileID: 172643438653438053, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4131,6 +4135,42 @@ PrefabInstance:
     - target: {fileID: 3043954819548529438, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -11.315
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.841
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.947
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.438
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.026641853
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.11358814
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.96693003
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.22679135
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -206.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -166.6
       objectReference: {fileID: 0}
     - target: {fileID: 6629133523858712499, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -24330,6 +24370,11 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!4 &999635282 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3883941373727168961, guid: 13767f0a2049134429c89798d35f0a78, type: 3}
+  m_PrefabInstance: {fileID: 198294429}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &1006103662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8376646494505211229, guid: c6b351a67ceb69140b199996bbbea156, type: 3}
@@ -47778,14 +47823,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2099088403}
-  m_LocalRotation: {x: 0.6308336, y: 0.33979216, z: 0.5986526, w: 0.3580579}
-  m_LocalPosition: {x: 0.00034, y: 0.00728, z: 0.00328}
+  m_LocalRotation: {x: -0.63164604, y: 0.56437415, z: 0.4674882, w: -0.25290304}
+  m_LocalPosition: {x: -0.0014, y: 0.0006, z: 0.00419}
   m_LocalScale: {x: 0.004638785, y: 0.0031236256, z: 0.002799999}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 113710894}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 177.426, y: -88.462006, z: -59.122986}
+  m_LocalEulerAnglesHint: {x: 192.016, y: 63.594, z: -283.905}
 --- !u!1 &2103347284
 GameObject:
   m_ObjectHideFlags: 0
@@ -57366,11 +57411,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bffaea94128cee43bce816af3897818, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rightHandPose: {fileID: 288106617}
   activateDrill: {fileID: 1685430920}
   rotateNut: {fileID: 1140299067}
   drilling: {fileID: 5381303069824070140}
   grabbed: 0
   isActive: 0
+  handAnimator: {fileID: 0}
+  rightHand: {fileID: 0}
 --- !u!82 &5381303069824070140
 AudioSource:
   m_ObjectHideFlags: 0
@@ -57474,7 +57522,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4524471320337866604}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c153c173edc06054d8f775c7035a5e93, type: 3}
   m_Name: 

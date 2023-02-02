@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ScrAkkuschrauber : MonoBehaviour
 {
+    public HandData rightHandPose;
     // [SerializeField] private GameObject druecker;
     // [SerializeField] private GameObject nuss;
     [SerializeField] private Animator activateDrill;
@@ -12,7 +15,22 @@ public class ScrAkkuschrauber : MonoBehaviour
     [SerializeField] private AudioSource drilling;
     [SerializeField] private bool grabbed;
     public bool isActive;
+    [SerializeField] private Animator handAnimator;
+    [SerializeField] private GameObject rightHand;
     //[SerializeField] private Schrauben schrauben;
+
+    private void Awake()
+    {
+        rightHand = GameObject.FindGameObjectWithTag("HandAnimator");
+        handAnimator = rightHand.GetComponent<Animator>();
+    }
+
+    private void Start()
+    {
+        // XRGrabInteractable grabInteractable = GetComponent<XRGrabInteractable>();
+    //     // grabInteractable.selectEntered.AddListener(SetupPose);
+        rightHandPose.gameObject.SetActive(false);
+    }
 
     void Update()
     {
@@ -24,6 +42,13 @@ public class ScrAkkuschrauber : MonoBehaviour
             {
                 CheckController(myDevice[0]);
             }
+            handAnimator.enabled = false;
+            //rightHandPose.gameObject.SetActive(true);
+        }
+        else
+        {
+            handAnimator.enabled = true;
+            //rightHandPose.gameObject.SetActive(false);
         }
     }
 
@@ -53,6 +78,19 @@ public class ScrAkkuschrauber : MonoBehaviour
     {
         this.grabbed = pGrabbed;
     }
+    
+    // public void SetupPose(BaseInteractionEventArgs arg)
+    // {
+    //     if(grabbed) {
+    //     handAnimator.enabled = false;
+    //     rightHandPose.gameObject.SetActive(true);
+    //     }
+    //     else
+    //     {
+    //         handAnimator.enabled = true;
+    //         rightHandPose.gameObject.SetActive(false);
+    //     }
+    // }
     
 
 
