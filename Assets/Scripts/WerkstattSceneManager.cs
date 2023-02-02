@@ -135,8 +135,16 @@ public class WerkstattSceneManager : MonoBehaviour
         
         for (int i = 0; i<taskThumbnails.Length; i++)
         {
+            Debug.Log("TaskThumbnails.Length: " + taskThumbnails.Length);
+            Debug.Log("bikeFrameImages.Length: " + bikeFrameImages.Length);
+            Debug.Log("tasks.Length: " + tasks.Length);
+            Debug.Log("tasks: " + String.Join(",", tasks));
+
+            if(i+1 < tasks.Length)
+            {
+                taskThumbnails[i].sprite = bikeFrameImages[tasks[i+1]];
+            }
             
-            taskThumbnails[i].sprite = bikeFrameImages[tasks[i+1]];
         }
 
     }
