@@ -3,7 +3,22 @@ guid: dbe655f9eb0cd2548a6f9fb264ebedfd
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Refraction
+    second: {fileID: 2100000, guid: 40666113290431348bd34a18d1a2cc39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ScrewdriverSolid
+    second: {fileID: 2100000, guid: 30dfac629f87c7548a3b1250ef409f99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: schraubendreher_metall
+    second: {fileID: 2100000, guid: d06b545dda797064e8fb14b39e8bedf9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

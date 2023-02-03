@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - hand
+  - Schrauber
+  - Akkuschrauber
+  - HandAnimator
   layers:
   - Default
   - TransparentFX

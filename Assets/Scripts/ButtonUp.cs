@@ -40,7 +40,8 @@ public class ButtonUp : MonoBehaviour
             // UpButton.Play("UpButtonPressed");
             moveGrappler = true;
             StartCoroutine("MoveButton");
-            
+
+            gameObject.GetComponent<AudioSource>().Play();
         }
     }
 
@@ -52,6 +53,7 @@ public class ButtonUp : MonoBehaviour
             moveGrappler = false;
             StartCoroutine("StopButton");
             // UpButton.Play("UpButtonReleased");
+            gameObject.GetComponent<AudioSource>().Stop();
         }
 
     }

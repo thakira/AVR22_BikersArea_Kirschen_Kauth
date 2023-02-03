@@ -58,8 +58,11 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-UserSettings/Layouts/default-2021.dwlt
-.idea/.idea.AVR22_BikersArea_Kirschen_Kauth/.idea/vcs.xml
-.idea/.idea.AVR22_BikersArea_Kirschen_Kauth/.idea/indexLayout.xml
-.idea/.idea.AVR22_BikersArea_Kirschen_Kauth/.idea/encodings.xml
-UserSettings/Layouts/default-2021.dwlt
+/[Uu]ser[Ss]ettings/
+*.zip
+/LightingData.asset
+.idea/.idea.Test_AVR22_BikersArea_Kirschen_Kauth/.idea/encodings.xml
+.idea/.idea.Test_AVR22_BikersArea_Kirschen_Kauth/.idea/indexLayout.xml
+.idea/.idea.Test_AVR22_BikersArea_Kirschen_Kauth/.idea/projectSettingsUpdater.xml
+.idea/.idea.Test_AVR22_BikersArea_Kirschen_Kauth/.idea/vcs.xml
+.idea/.idea.Test_AVR22_BikersArea_Kirschen_Kauth/.idea/workspace.xml
