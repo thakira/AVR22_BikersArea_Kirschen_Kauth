@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: KauthKirschenGames
+  companyName: com.KauthKirschen.Games
   productName: BikeWorkshop
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
@@ -137,9 +137,9 @@ PlayerSettings:
   bundleVersion: 1.0.0
   preloadedAssets:
   - {fileID: 0}
-  - {fileID: 11400000, guid: 29f457237b8394747a687a1da82a852a, type: 2}
-  - {fileID: -3251108220838027703, guid: c3bd2a49fba13e942918c1c4047f9e81, type: 2}
-  - {fileID: -1984417089126534741, guid: 14c7c7ad4e3f8394cbf340c2c5c136a2, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -159,7 +159,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.DefaultCompany.BikeWorkshop
+    Android: com.com.KauthKirschen.Games.BikeWorkshop
     Standalone: com.KauthKirschenGames.BikeWorkshop
   buildNumber:
     Standalone: 0

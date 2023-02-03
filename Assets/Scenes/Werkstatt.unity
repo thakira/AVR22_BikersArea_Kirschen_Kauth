@@ -6406,7 +6406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Intensity
@@ -10482,7 +10482,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Intensity
@@ -12693,7 +12693,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Intensity
@@ -22203,7 +22203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Intensity
@@ -29774,14 +29774,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681565561}
     m_Modifications:
-    - target: {fileID: 245007096831149893, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 245007096831149893, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.321
-      objectReference: {fileID: 0}
     - target: {fileID: 706272881822761942, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Name
       value: Fluorescent Light
@@ -29789,14 +29781,6 @@ PrefabInstance:
     - target: {fileID: 706272881822761943, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 706272881822761943, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.9937422
-      objectReference: {fileID: 0}
-    - target: {fileID: 706272881822761943, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9937421
       objectReference: {fileID: 0}
     - target: {fileID: 706272881822761943, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29839,16 +29823,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Intensity
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7199537238287826302, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
@@ -34750,7 +34726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2481734436262117679, guid: a21ea2d37c14a2f48a88ee1db6eab0b4, type: 3}
       propertyPath: m_Intensity
